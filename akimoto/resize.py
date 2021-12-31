@@ -3,6 +3,10 @@ import glob
 import re
 import os
 
+"""Resize the images and save them as the preprocessed images
+
+"""
+
 # files = glob.glob('./imgs/*/*.jpg')
 files = glob.glob('./imgs/*/*.jpg')
 if not os.path.exists("imgs/akb_pre"):
@@ -37,7 +41,7 @@ for file in files:
     img = cv2.imread(file)
     img = crop_squre(img)
 
-    IMG_SIZE = 64
+    IMG_SIZE = 128
     img = cv2.resize(img, dsize=(IMG_SIZE, IMG_SIZE))
 
     cv2.imwrite(file_new, img)
