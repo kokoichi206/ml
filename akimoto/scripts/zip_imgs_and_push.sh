@@ -1,9 +1,11 @@
 #!/bin/bash -eu
 #
 # Description:
+#   前処理後のファイルをzip化し、remoteにpushする
 #
 # Usage:
-#
+#   bash scripts/<file name>
+#   上の階層で使う事
 
 cd imgs
 zip -r archive akb_pre > /dev/null

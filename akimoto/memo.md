@@ -3,12 +3,14 @@
 
 - [Git lfs](https://qiita.com/ikmski/items/5cc8b8832336b8d85429)
 - [scriptの-eu](https://qiita.com/youcune/items/fcfb4ad3d7c1edf9dc96)
+- [save/load model/weight](https://qiita.com/supersaiakujin/items/b9c9da9497c2163d5a74)
 
 
 ## error
 
 ### 使用可能な RAM をすべて使用した後で、セッションがクラッシュしました
 - [Teratail: 解決せず](https://teratail.com/questions/220308)
+    - 単純にメモリを意識する
 
 
 ## 試してみたいこと
