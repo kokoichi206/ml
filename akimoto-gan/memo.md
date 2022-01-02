@@ -22,3 +22,6 @@ else:
   print('You are using a high-RAM runtime!')
 ```
 
+
+## GAN
+- [Code Sample (Keras Document)](https://keras.io/examples/generative/dcgan_overriding_train_step/)
