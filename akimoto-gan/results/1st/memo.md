@@ -25,3 +25,11 @@ else:
 
 ## GAN
 - [Code Sample (Keras Document)](https://keras.io/examples/generative/dcgan_overriding_train_step/)
+
+### どうしよう
+- 2000 step までやったが、途中から改善が見られ無くなってきた
+- そもそも枚数少なくて過学習になる？
+- 過学習になるとしても、元画像と全く同じのが生成できるまでは進むはず？
+  - 1000枚、ゼロベースから、5000epochとかで学習させてたのを見たので、5000までやってみる
+  - そのあとは少数で学習を学習させる方法で試したい（2nd）
+  - fine tuning or transfer learning?
