@@ -10,7 +10,9 @@ def main():
     # RATIO = 1.1
 
     pre_dir = "pre"
-    files = glob.glob('./imgs/*/*/*.jpg')
+    # target_file = './imgs/*/*/*.jpg'
+    target_file = './imgs/extras/*/*.png'
+    files = glob.glob(target_file)
     # files = glob.glob('./imgs/*.jpg')
     total = len(files)
     print(total)
@@ -32,7 +34,7 @@ def main():
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
         # face detect
-        face = cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=3, minSize=(30, 30))
+        face = cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))
         if len(face) > 0:
             found += 1
 
@@ -44,8 +46,10 @@ def main():
 
             rt = RATIO - 1
 
+            # THE顔面の中心から見ると、より頭の方が出っ張ってるので、そこを調整する割合
             top_diff = 3
             bottom_diff = 1
+
             start_x = round(max(0, x-rt*w/2))
             start_y = round(max(0, y-rt*h*top_diff/(top_diff+bottom_diff)))
             end_x = round(min(img_w, x+w + rt*w/2))
@@ -54,7 +58,7 @@ def main():
             cropped = img[start_y:end_y, start_x:end_x, :]
             save_name = f"{file_name}_{cnt}.jpg"
 
-            resized = cv2.resize(cropped, dsize=(512, 512))
+            resized = cv2.resize(cropped, dsize=(64, 64))
 
             cv2.imwrite(os.path.join(new_dir, save_name), resized)
 
