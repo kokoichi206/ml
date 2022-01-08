@@ -1,5 +1,4 @@
 from keras.models import model_from_json
-import os
 import tensorflow as tf
 from tensorflow import keras
 import numpy as np
