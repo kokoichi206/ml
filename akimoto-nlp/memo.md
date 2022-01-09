@@ -261,6 +261,41 @@ SMT, PBMT, NMT
     - Common Sense Reasoning
         - The trophy doesn't fit to the suitcase beceuse it is too big.
 
+#### GPT-3
+- [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165)
+- OpenAI の人々
+- 時代背景
+    - Scaling Law
+        - 大きい Transformaer は強い
+    - NLP * DL の流れ
+- model
+    - GPT-2 + Sparse Transformer
+    - 1750 億のパラメータ
+    - n_layers = 96
+    - BatchSize = 3.2M
+    - lr = 6e-4
+- data
+    - Common Crawl (を cleaning)
+    - WebText2
+    - Books1
+    - Books2
+    - wikipedia
+    - 300B tokens を用いて学習
+- Few Shot, 1S, 0X
+    - 自然言語でタスクと例を与え、続きの生成結果を出力する
+    - 例の数が、Few, One, Zero nい関係する
+- 背景の思想
+    - In Context Learning
+    - 超巨大データ
+    - 様々なスキルに関するデータがあり、うまく学習している
+    - そのため、各タスクが解ける
+- 性能
+    - Translation は良い
+    - 比較は苦手 (Super GLUE WiC)
+    - Arithmetic
+    - News Article Generation
+
+
 
 ### 歌詞収集
 
