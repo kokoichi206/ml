@@ -295,6 +295,14 @@ SMT, PBMT, NMT
     - Arithmetic
     - News Article Generation
 
+### t5
+- Text-to-Text Transfer Transformer
+- [Github](https://github.com/sonoisa/t5-japanese)
+- [文字列の正規化処理](https://github.com/neologd/mecab-ipadic-neologd/wiki/Regexp.ja)
+- [t5 hugging face](https://www.subcul-science.com/post/20210701t5/)
+- [pytorch lightning](https://github.com/PyTorchLightning/pytorch-lightning)
+    - 機械学習の典型的な処理を簡潔に書くことができるフレームワーク
+
 
 ### tf-idf
 - tf-idfとは、tfという概念とidfという概念を組み合わせたもの
