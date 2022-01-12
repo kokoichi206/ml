@@ -303,6 +303,11 @@ SMT, PBMT, NMT
 - [pytorch lightning](https://github.com/PyTorchLightning/pytorch-lightning)
     - 機械学習の典型的な処理を簡潔に書くことができるフレームワーク
 
+#### model
+- transformer のような Encoder-Decoder モデル
+- 決まっている部分以降をマスクしたものを学習に使う（んだっけ？）
+    - BERT のように中間の１文字をマスクするようなことはしない
+
 
 ### tf-idf
 - tf-idfとは、tfという概念とidfという概念を組み合わせたもの
