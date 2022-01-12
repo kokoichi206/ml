@@ -31,4 +31,13 @@ else:
 ### 不安定性
 突然崩れる時がある
 
+#### 1
+
 ![](imgs/instability.jpg)
+
+#### 2
+![](imgs/instability2.png)
+
+#### 3
+![](imgs/instability3.png)
+![](imgs/instability3_loss.png)
