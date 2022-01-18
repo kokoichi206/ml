@@ -41,3 +41,8 @@ else:
 #### 3
 ![](imgs/instability3.png)
 ![](imgs/instability3_loss.png)
+
+#### 4
+モード崩壊
+
+![](imgs/instability4.png)
