@@ -3,4 +3,6 @@
 ## 概要
 GANにより画像を生成する
 
-![](./result.jpg)
+## 学習まとめ
+- [DCGAN](memo.md)
+- [Self-Attention GAN](results/self_attention/README.md)

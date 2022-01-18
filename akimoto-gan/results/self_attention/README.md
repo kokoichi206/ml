@@ -13,3 +13,4 @@ DCGAN と SAGAN (Self-Attention GAN)の学習速度・精度の比較
 | 30 | <img src="dcgan/0030.png" width="150"> |<img src="sagan/0030.png" width="150">|
 | 50 | <img src="dcgan/0050.png" width="150"> |<img src="sagan/0050.png" width="150">|
 | 100 | <img src="dcgan/0100.png" width="150"> |<img src="sagan/0100.png" width="150">|
+| 150 | <img src="dcgan/0150.png" width="150"> |<img src="sagan/0150.png" width="150">|
