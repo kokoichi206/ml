@@ -1,2 +1,5 @@
 .DS_Store
 __pycache__
+annotation/data
+*.mp4
+preprocessing/imgs
