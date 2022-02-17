@@ -7,7 +7,6 @@ import sys
 """
 顔を検知し、指定したサイズにリサイズする
 """
-
 class Preprocesser(object):
     def __init__(self, 
         data_dir="/Users/kokoichi/Documents/imgs", save_dir="imgs/pre",

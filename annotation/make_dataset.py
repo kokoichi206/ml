@@ -6,12 +6,14 @@ from pathlib import Path
 import shutil
 
 
+"""
+データセットとして公開するために必要な情報の記載と
+zipファイルの作成を行うクラス
+"""
 class Dataset(object):
     def __init__(self, dir, output_dir='data', output_img_dir='img'):
         self.dir = dir
         self.files = self.get_files(dir)
-        # for file in self.files:
-        #     print(type(file))
         self.output_dir = output_dir
         self.output_img_dir = os.path.join(output_dir, output_img_dir)
         self.min_shape, self.max_shape \
@@ -23,14 +25,19 @@ class Dataset(object):
         os.makedirs(self.output_img_dir, exist_ok=True)
 
     @staticmethod
-    def get_files(dir):
+    def get_files(dir, extention="png"):
         """
         渡されたフォルダ内に含まれる png ファイル名を再帰的に取得する。
         :param dir: 写真が保存されているフォルダ名
         :return: パスのリスト
         """
         # rglob は generator を返す
-        files = Path(dir).rglob('*.png')
+        if extention == "png":
+            files = Path(dir).rglob('*.png')
+        elif extention == "jpg":
+            files = Path(dir).rglob('*.jpg')
+        else:
+            files = Path(dir).rglob('*')
         # それを文字列のリストにして返す
         file_list = []
         for f in files:
@@ -96,5 +103,4 @@ class Dataset(object):
 if __name__ == '__main__':
     img_dir = '/Users/kokoichi/Documents/imgs'
     dataset = Dataset(img_dir)
-    # print(dataset.files)
     print(dataset.create_dataset())
