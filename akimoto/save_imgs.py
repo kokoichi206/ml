@@ -5,6 +5,7 @@ import os
 def main():
     IMG_NUM = 200
 
+    # GET all names for saka
     names = get_names.saka()
     offset = 0
     print(names)
@@ -14,6 +15,7 @@ def main():
         google_img_search.scrapingImages(name, f"saka/{name}", IMG_NUM, offset=offset)
         offset += IMG_NUM
 
+    # GET all names for akb
     names = get_names.akb()
     offset = 0
     for name in names:

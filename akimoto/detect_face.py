@@ -64,16 +64,6 @@ def main():
 
             cnt += 1
 
-#            if x - rt*w/2 > 0 and y - rt*h/2 and x+w + rt*w/2 < img_w and y+h + rt*h/2 < img_h:
-#                # cropped = img[round(y-h/2):round(y+3*h/2), round(x-w/2):round(x+3*w/2), :]
-#                cropped = img[round(y):round(y+h), round(x):round(x+w), :]
-#                # cropped = img[round(x-w/2):round(x+3*w/2), round(y-h/2):round(y+3*h/2), :]
-#                print(cropped.shape)
-#            # cv2.rectangle(img, (x, y), (x + w, y+h), (0,0,300), 4)
-#                print(new_dir)
-#                print(f"{new_dir}.jpg")
-#                cv2.imwrite(os.path.join(new_dir, file_name), cropped)
-
     print(f"not found pictures {total-found}")
 
 

@@ -44,7 +44,7 @@ def sakura_names():
 
 def hinata_names():
 
-    # URL 構成の感じ、めっちゃ桜坂と似てる！！
+    # URL 構成の感じ、めっちゃ櫻坂と似てる！！
     TOP_URL = 'https://www.hinatazaka46.com/s/official/search/artist'
 
     soup = get_dom(TOP_URL)
@@ -90,11 +90,7 @@ def akb():
     return akb
 
 if __name__ == '__main__':
-    # saka = nogi_names()
-    # # saka.append(sakura_names())
-    # saka += sakura_names()
-    # # saka.append(hinata_names())
-    # saka += hinata_names()
-    # print(saka)
+    saka = nogi_names() + sakura_names() + hinata_names()
+    print(len(saka()))
+    akb = akb()
     print(len(akb()))
-    # print(len(saka()))
