@@ -25,3 +25,9 @@
 
 ### 予測
 1. 予想する ([code](./akimoto_predict.ipynb))
+
+
+## 説明
+- tensorflow
+    - [dropout + data augmentation](akimoto_v1.ipynb)
+- [pytorch(resnet50)](results/7th/resnet50.ipynb)
